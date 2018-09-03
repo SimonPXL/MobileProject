@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar"
+    android:orientation="vertical"
+    tools:context=".ExerciseDetails"
+    tools:showIn="@layout/activity_exercise_details">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/tv_targetArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:id="@+id/tv_sets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_targetArea"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/tv_reps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sets"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_reps"
+        android:layout_marginBottom="10dp"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Edit"
+        android:textAlignment="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="25dp"
+        android:drawableLeft="@drawable/edit"
+        android:gravity="left|center_vertical"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
